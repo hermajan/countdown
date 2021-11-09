@@ -1,0 +1,17 @@
+{
+	"name": "hermajan/countdown",
+	"description": "JavaScript library for creating countdowns.",
+	"type": "library",
+	"license": "MIT",
+	
+	"homepage": "https://hermajan.net/countdown",
+	"support": {
+		"issues": "https://github.com/hermajan/countdown/issues"
+	},
+	
+	"config": {
+		"vendor-dir": "vendor",
+		"sort-packages": true,
+		"optimize-autoloader": true
+	}
+}
