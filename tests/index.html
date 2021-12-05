@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
+	<meta charset="UTF-8">
+	<title>Countdown</title>
 </head>
 <body>
-    <time class="countdown" data-lang="cs" datetime="2021-12-21T15:16" data-remains="Zůstává ještě" data-after="." data-ended="Událost skončila.">2021-12-21T15:16</time>
-    <script src="../src/countdown.js"></script>
+	<time class="countdown" data-lang="en" datetime="2021-12-21T15:16" data-remains="Remains" data-after="." data-ended="The event is over.">2021-12-21T15:16</time>
+	<br>
+	<time class="countdown" datetime="2021-12-21T15:16" data-ended="The event is over.">2021-12-21T15:16</time>
+	<script src="../src/countdown.js"></script>
+	<script>startCountdowns();</script>
 </body>
 </html>

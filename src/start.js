@@ -1,0 +1,1 @@
+startCountdowns();
