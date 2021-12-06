@@ -2,7 +2,7 @@
 	"name": "@hermajan/countdown",
 	"description": "JavaScript library for creating countdowns.",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"homepage": "https://hermajan.net/countdown",
 	"bugs": "https://github.com/hermajan/countdown/issues",
 	"repository": {
