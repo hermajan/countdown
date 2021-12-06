@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown</title>
+</head>
+<body>
+	<h3>With text</h3>
+	<h4>Source:</h4>
+	<pre><code class="language-html">&lt;time class="countdown" data-lang="en" datetime="2021-12-21T15:16" data-remains="Remains" data-after="." data-ended="The event is over."&gt;2021-12-21T15:16&lt;/time&gt;</code></pre>
+	
+	<h4>Rendered:</h4>
+	<time class="countdown" data-lang="en" datetime="2021-12-21T15:16" data-remains="Remains" data-after="." data-ended="The event is over.">2021-12-21T15:16</time>
+	<hr>
+	
+	<h3>Without text</h3>
+	<h4>Source:</h4>
+	<pre><code class="language-html">&lt;time class="countdown" datetime="2021-12-21T15:16" data-ended="The event is over."&gt;2021-12-21T15:16&lt;/time&gt;</code></pre>
+	
+	<h4>Rendered:</h4>
+	<time class="countdown" datetime="2021-12-21T15:16" data-ended="The event is over.">2021-12-21T15:16</time>
+	
+	<script src="../src/countdown.js"></script>
+	<script>startCountdowns();</script>
+</body>
+</html>

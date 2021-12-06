@@ -85,7 +85,7 @@ function countdown(element) {
 					case "minutes":
 						output += (count < 10 ? "0" : "") + count + ":";
 						break;
-					default:
+					case "seconds":
 						output += (count < 10 ? "0" : "") + count;
 						break;
 				}
