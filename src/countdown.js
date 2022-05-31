@@ -32,7 +32,7 @@ function inflection(count, what, lang = "en") {
 		return words[lang][what][0];
 	}
 	
-	if(0 < count < 5) {
+	if(0 < count && count < 5) {
 		return words[lang][what][1];
 	}
 	return words[lang][what][2];
