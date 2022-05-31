@@ -109,3 +109,5 @@ function startCountdowns(className = "countdown") {
 		countdown(countdowns[i]);
 	}
 }
+
+export default { inflection };
