@@ -110,4 +110,4 @@ function startCountdowns(className = "countdown") {
 	}
 }
 
-export default { inflection };
+//export default { inflection };
