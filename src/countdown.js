@@ -32,7 +32,7 @@ function inflection(count, what, lang = "en") {
 		return words[lang][what][0];
 	}
 	
-	if(0 < count && count < 5) {
+	if(2 <= count && count < 5) {
 		return words[lang][what][1];
 	}
 	return words[lang][what][2];
@@ -66,9 +66,39 @@ function countdown(element) {
 		lang = element.getAttribute("data-lang");
 	}
 	
+	let view = "blank";
+	if(element.hasAttribute("data-view")) {
+		view = element.getAttribute("data-view");
+	}
+	
+	let visible = [];
+	let showRemains = false;
+	for(let what in remain) {
+		switch(view) {
+			case "all":
+				visible[what] = true;
+				break;
+			case "rest":
+				if(remain[what] > 0) {
+					visible[what] = true;
+				}
+				break;
+			default:
+			case "blank":
+				if(showRemains === true || remain[what] > 0) {
+					visible[what] = true;
+					showRemains = true;
+				} else {
+					visible[what] = false;
+				}
+				break;
+		}
+	}
+	
 	for(let what in remain) {
 		let count = remain[what];
-		if(count > 0) {
+		
+		if(visible[what] === true) {
 			if(element.hasAttribute("data-lang")) {
 				output += " " + count + " " + inflection(count, what, lang);
 			} else {
