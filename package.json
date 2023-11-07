@@ -11,6 +11,6 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"cypress": "^9.7.0"
+		"cypress": "^13.4.0"
 	}
 }
